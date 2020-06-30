@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Archieve') {
             steps {
-                archiveArtifacts artifacts: 'target/my-app-1.0-SNAPSHOT.jar', onlyIfSuccessful: true
+                archiveArtifacts artifacts: 'target/my-app-2.0-SNAPSHOT.jar', onlyIfSuccessful: true
             }
         }
         stage('Deliver') {
